@@ -28,6 +28,7 @@ type PostgreSQLContainer struct {
 	Host       string
 }
 
+// NewPostgreSQLContainer создаёт контейнер postgresql
 func NewPostgreSQLContainer(ctx context.Context) (*PostgreSQLContainer, error) {
 	req := testcontainers.ContainerRequest{
 		Env: map[string]string{
